@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+/*Navbar start https://www.codingnepalweb.com/responsive-accordion-menu-html-css/*/
+/* navbar baggrund farve 100% width for at fylde hele længden */
+  nav{
+    background: #00A8E8;
+    height: 155px;
+    width: 100%;
+  }
+  /*logo i venstre side, hvor der står "ringkøbing lægehus"*/
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+  /*responsive text center*/
+  nav ul{
+    text-align: center;
+  
+  /* menu datalist */
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  /* menu datalist tekst og distance*/
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  /*hover effekt*/
+  a.active,a:hover{
+    background: #003459;
+    transition: .5s;
+  }
+  /* hamburger menu position, size, */
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+  /* media screen for logo ændre position og font størrelsen*/
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    /*fonten der ændre størrelse*/
+    nav ul li a{
+      font-size: 16px;
+    }
+    /*hamburger menu der kommer frem ved 1100px skærmstørrelse*/
+  }
+  @media (max-width: 1100px){
+    .checkbtn{
+      display: block;
+    }
+    /*ændre navs højre. den blå kasse*/
+    nav {
+        height: 80px;
+    }
+    /*gøre navbar fullscreen sådan det fylder det hele.*/
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #00A8E8;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index:+2
+
+    }
+ /*fullscreen nav tekst display*/
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    /*fullscreen nav ændre fonten*/
+    nav ul li a{
+      font-size: 20px;
+    }
+    /*full screen nav hover effekt */
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    /*position på farve boks*/
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+  /* navbar slut*/
+  
+/*faq https://codepen.io/codeseries09/pen/poowRqK */
+/*den hvide boks */
+  .box{
+     width: 1000px;
+     margin: 100px auto;
+     background: #fff;
+     border-radius: 7px;
+     box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+  }
+  /*header for boks */
+  .box .heading{
+     background: #00A8E8;
+     border-radius: 7px 7px 0px 0px;
+     padding: 10px;
+     color: #fff;
+     text-align: center;
+  }
+  /*padding afstand fra yderste kasse til inder kasse*/
+  .faqs{
+     padding: 0px 20px 20px;
+  }
+  
+  ::-webkit-details-marker{
+     float: right;
+     margin-top: 3px;
+  }
+  
+  /*design når man åbner en kassen til dropdown*/
+  details{
+     background: #e3e3e3;
+     padding: 10px 20px;
+     border-radius: 7px;
+     margin-top: 20px;
+     font-size: 20px;
+     letter-spacing: 1px;
+     cursor: pointer;
+  }
+  
+
+  /*faq slut*/
+  
+/*search bar*/
+/*https://www.youtube.com/watch?v=csY6KW7cIUM&ab_channel=GeekBase*/
+/*boks container der giver den runde form*/
+   .boxContainer{
+  margin:auto;
+  margin-top: 5%;
+  position: relative;
+  border: 4px solid #00A8E8;
+  padding: 3px 10px;
+  border-radius: 50px;
+  }
+  /*icon position*/
+.elementsContainer{
+  width: 100%;
+}
+/*search bar der fylder og giver den runde form, hvor .boxcontainer laver en kasse rundt om det.*/
+.search{
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 10px 100px;
+  border-radius: 50px;
+}
+/*når man klikke fjerne den stadig outlines*/
+.search:focus{
+    outline: none;
+}
+/*forstørrelses glass icon størrelse og farve*/
+.fa-search{
+  font-size: 2em;
+  color:#00A8E8;
+
+/*for at ikke have en hover effekt når man har musen over iconet*/
+}
+.nohover{
+  pointer-events: none;
+}
+/*search bar slut*/
+
+/*footer*/
+/*https://www.youtube.com/watch?v=YOb67OKw62s&ab_channel=TheWebShala*/
+
+/*afstand mellem tekst*/
+body{
+	line-height: 1.5;
+}
+
+/*starter ude fra kanterne*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	margin:auto;
+}
+
+/*teksten og længden på det i width*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+/*display warp der gøre det køre under hinanden når man trækker den længere og længere ind*/
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+/*footer baggrund farve*/
+.footer{
+	background-color: #00A8E8;
+    padding: 70px 0;
+}
+/* afstand mellem de fire coloms. */
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   
+/*hovedtitel*/
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+/* underscore linje  */
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #003459;
+	height: 2px;
+	box-sizing: border-box;
+	width: 100px;
+}
+/* underpunkternes linjeafstand*/
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+/*underpunkters farve og tekst*/
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #003459;
+	display: block;
+	transition: all 0.3s ease;
+}
+/*hover effekt*/
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+/*log ind logoet farve*/
+
+.footer-col .log-ind a{
+	display: inline-block;
+	height: 60px;
+	width: 80px;
+	background-color: rgba(255, 253, 253, 0.2);
+  margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 20%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+/*hover effekt når man har musen over log ind logoet*/
+.footer-col .log-ind a:hover{
+	color: #ffffff;
+	background-color: #003459;
+}
+
+/*responsive når skærmen er 767 px skal den ændre */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px; }
+  .box {
+      width: 70%;
+    }
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+
+/*faq slut*/
+
+/*responsive for faq boksen. ændres størrelse for hver størrelse*/
+
+}
+
+@media(min-width:768px) {
+  .box {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
